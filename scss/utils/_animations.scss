@@ -1,0 +1,67 @@
+// Fade In Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Slide Up Animation
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Scale Animation
+@keyframes scale {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Animation Classes
+.animate {
+  &-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  &-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  &-scale {
+    animation: scale 0.3s ease-out;
+  }
+}
+
+// Hover Effects
+.hover {
+  &-scale {
+    @include transition(transform);
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &-lift {
+    @include transition(transform);
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+} 

@@ -1,0 +1,112 @@
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $dark-color;
+}
+
+h1 {
+  font-size: 2.5rem;
+  
+  @include respond-to('md') {
+    font-size: 3rem;
+  }
+  
+  @include respond-to('lg') {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  
+  @include respond-to('md') {
+    font-size: 2.5rem;
+  }
+  
+  @include respond-to('lg') {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  
+  @include respond-to('md') {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  
+  @include respond-to('md') {
+    font-size: 1.75rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+  
+  @include respond-to('md') {
+    font-size: 1.5rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  
+  @include respond-to('md') {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  margin-bottom: $spacing-md;
+  font-size: 1rem;
+  line-height: 1.6;
+  
+  @include respond-to('md') {
+    font-size: 1.1rem;
+  }
+}
+
+.text {
+  &-primary {
+    color: $primary-color;
+  }
+  
+  &-secondary {
+    color: $secondary-color;
+  }
+  
+  &-white {
+    color: $white;
+  }
+  
+  &-center {
+    text-align: center;
+  }
+  
+  &-right {
+    text-align: right;
+  }
+  
+  &-left {
+    text-align: left;
+  }
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  
+  @include respond-to('md') {
+    font-size: 1.5rem;
+  }
+}
+
+.small {
+  font-size: 0.875rem;
+} 

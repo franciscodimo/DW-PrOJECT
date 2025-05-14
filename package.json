@@ -1,0 +1,21 @@
+{
+  "name": "changai-luxury-cars",
+  "version": "1.0.0",
+  "description": "Marketplace exclusivo de autos de lujo",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss:css/style.css --watch",
+    "sass:build": "sass scss/main.scss:css/style.css --style compressed",
+    "start": "npm run sass"
+  },
+  "keywords": [
+    "luxury",
+    "cars",
+    "marketplace"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+} 
