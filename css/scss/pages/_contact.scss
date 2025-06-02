@@ -1,6 +1,6 @@
 .contact-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/Audi R8.png') center/cover no-repeat;
+                url('../images/backgrounds/hero-products.jpg') center/cover no-repeat;
     height: 300px;
     margin-top: 56px;
     @include flex-center;
@@ -9,40 +9,48 @@
 }
 
 .contact-section {
+    background-color: $white;
+
     .contact-info {
-        @include slide-up;
+        height: 100%;
+        border: 1px solid rgba($dark, 0.1);
         
+        h5 {
+            color: $primary-color;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $secondary-color;
+            margin-bottom: 0;
+        }
+
         .social-links {
             a {
+                color: $primary-color;
                 transition: $transition-base;
-                
+
                 &:hover {
-                    transform: translateY(-3px);
+                    color: darken($primary-color, 10%);
                 }
             }
         }
     }
 
-    .contact-form {
-        @include slide-up;
-        animation-delay: 0.2s;
-
-        .form-control {
-            transition: $transition-base;
+    #contactForm {
+        .form-control, .form-select {
+            border: 1px solid rgba($dark, 0.1);
+            padding: 0.8rem;
             
             &:focus {
-                box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
                 border-color: $primary-color;
+                box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.1);
             }
         }
 
         .btn-primary {
-            @include button-variant($primary-color);
-            width: 100%;
-            
-            @include respond-to(md) {
-                width: auto;
-            }
+            padding: 0.8rem 2rem;
         }
     }
 }

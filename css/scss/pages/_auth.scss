@@ -1,7 +1,15 @@
+.auth-background {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/backgrounds/hero-home.jpg') center/cover fixed no-repeat;
+    @include flex-center;
+    padding: 2rem 0;
+}
+
 .auth-page {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/Audi R8.png') center/cover fixed no-repeat;
+                url('../images/backgrounds/hero-home.jpg') center/cover fixed no-repeat;
     padding: 100px 0;
 
     .auth-card {
