@@ -1,0 +1,105 @@
+.navbar {
+  @include transition;
+  padding: $spacing-md 0;
+  
+  &-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $white;
+    @include transition;
+    
+    &:hover {
+      color: $primary-color;
+    }
+    
+    i {
+      margin-right: $spacing-sm;
+    }
+  }
+  
+  &-nav {
+    .nav-item {
+      margin: 0 $spacing-sm;
+      
+      .nav-link {
+        color: $white;
+        @include transition;
+        position: relative;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background-color: $primary-color;
+          @include transition;
+          transform: translateX(-50%);
+        }
+        
+        &:hover, &.active {
+          color: $primary-color;
+          
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: $spacing-sm;
+    
+    &:focus {
+      box-shadow: none;
+    }
+    
+    .navbar-toggler-icon {
+      background-image: none;
+      position: relative;
+      
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $white;
+        @include transition;
+      }
+      
+      &:before {
+        top: -6px;
+      }
+      
+      &:after {
+        bottom: -6px;
+      }
+    }
+  }
+}
+
+// Responsive Navigation
+@include respond-to('md') {
+  .navbar {
+    &-nav {
+      .nav-item {
+        margin: 0 $spacing-md;
+      }
+    }
+  }
+}
+
+@include respond-to('lg') {
+  .navbar {
+    padding: $spacing-lg 0;
+    
+    &-nav {
+      .nav-item {
+        margin: 0 $spacing-lg;
+      }
+    }
+  }
+} 

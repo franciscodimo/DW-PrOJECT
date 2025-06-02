@@ -1,0 +1,82 @@
+.card {
+  @include transition;
+  @include box-shadow(1);
+  border: none;
+  border-radius: $border-radius;
+  overflow: hidden;
+  
+  &:hover {
+    @include box-shadow(2);
+    transform: translateY(-5px);
+  }
+  
+  &-img-top {
+    height: 200px;
+    object-fit: cover;
+    @include transition;
+    
+    @include respond-to('md') {
+      height: 250px;
+    }
+  }
+  
+  &-body {
+    padding: $spacing-md;
+  }
+  
+  &-title {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-sm;
+    color: $dark-color;
+  }
+  
+  &-text {
+    color: $secondary-color;
+    margin-bottom: $spacing-md;
+  }
+  
+  // Feature Cards
+  &.feature-card {
+    text-align: center;
+    padding: $spacing-lg;
+    background-color: $white;
+    @include box-shadow(1);
+    
+    i {
+      color: $primary-color;
+      margin-bottom: $spacing-md;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-md;
+      color: $dark-color;
+    }
+    
+    p {
+      color: $secondary-color;
+      margin-bottom: 0;
+    }
+    
+    &:hover {
+      @include box-shadow(2);
+      
+      i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Card Grid
+.card-grid {
+  @include grid(1, $spacing-md);
+  
+  @include respond-to('sm') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include respond-to('lg') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 

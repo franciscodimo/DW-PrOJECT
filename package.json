@@ -1,27 +1,21 @@
 {
   "name": "changai",
   "version": "1.0.0",
-  "description": "Marketplace de autos de lujo",
+  "description": "Luxury car marketplace",
   "main": "index.js",
   "scripts": {
-    "sass": "sass css/scss/main.scss css/style.css --watch",
-    "sass:build": "sass css/scss/main.scss css/style.css --style compressed",
-    "serve": "live-server --port=8080 --no-browser",
     "start": "npm run serve & npm run sass",
-    "build": "npm run sass:build"
+    "serve": "live-server --port=8080 --no-browser",
+    "sass": "sass css/scss/main.scss css/style.css --watch"
   },
   "keywords": [
-    "autos",
-    "lujo",
-    "marketplace",
-    "ecommerce"
+    "cars",
+    "luxury",
+    "marketplace"
   ],
-  "author": "Francisco Di Mó",
+  "author": "Francisco Dimo",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.3.2"
-  },
-  "devDependencies": {
     "live-server": "^1.2.2",
     "sass": "^1.69.5"
   }

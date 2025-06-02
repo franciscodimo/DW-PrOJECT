@@ -1,0 +1,58 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $dark-color;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default focus styles */
+:focus {
+  outline: none;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 

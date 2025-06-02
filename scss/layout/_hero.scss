@@ -1,0 +1,85 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(rgba($dark-color, 0.7), rgba($dark-color, 0.7)),
+              url('../images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: $spacing-xl 0;
+  margin-top: -76px; // Compensate for fixed navbar
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-md;
+    animation: slideUp 0.8s ease-out;
+    
+    @include respond-to('md') {
+      font-size: 3.5rem;
+    }
+    
+    @include respond-to('lg') {
+      font-size: 4rem;
+    }
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: $spacing-lg;
+    animation: slideUp 0.8s ease-out 0.2s backwards;
+    
+    @include respond-to('md') {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .btn {
+    animation: slideUp 0.8s ease-out 0.4s backwards;
+    padding: $spacing-md $spacing-lg;
+    font-size: 1.1rem;
+    
+    @include respond-to('md') {
+      padding: $spacing-lg $spacing-xl;
+      font-size: 1.2rem;
+    }
+  }
+  
+  // Overlay gradient
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba($dark-color, 0.8) 0%,
+      rgba($dark-color, 0.6) 50%,
+      rgba($dark-color, 0.8) 100%
+    );
+  }
+}
+
+// Mobile Optimization
+@media (max-height: 600px) {
+  .hero-section {
+    min-height: 500px;
+    padding: $spacing-lg 0;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+} 
