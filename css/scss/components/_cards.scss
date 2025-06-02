@@ -1,0 +1,101 @@
+.card {
+    border: none;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    transition: $transition-base;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-text {
+        color: $secondary-color;
+        margin-bottom: 1.5rem;
+    }
+}
+
+// Product card specific styles
+.product-card {
+    margin-bottom: 2rem;
+    background: $white;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    @include card-hover;
+
+    .product-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: $primary-color;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: $border-radius;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    .product-specs {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        font-size: 0.875rem;
+        color: $secondary-color;
+
+        span {
+            display: flex;
+            align-items: center;
+            
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .product-features {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-top: 1px solid rgba($secondary-color, 0.1);
+        border-bottom: 1px solid rgba($secondary-color, 0.1);
+
+        span {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            
+            i {
+                margin-right: 0.5rem;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .product-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+} 

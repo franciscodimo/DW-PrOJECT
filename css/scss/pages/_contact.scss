@@ -1,0 +1,57 @@
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/Audi R8.png') center/cover no-repeat;
+    height: 300px;
+    margin-top: 56px;
+    @include flex-center;
+    text-align: center;
+    @include fade-in;
+}
+
+.contact-section {
+    .contact-info {
+        @include slide-up;
+        
+        .social-links {
+            a {
+                transition: $transition-base;
+                
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        @include slide-up;
+        animation-delay: 0.2s;
+
+        .form-control {
+            transition: $transition-base;
+            
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+                border-color: $primary-color;
+            }
+        }
+
+        .btn-primary {
+            @include button-variant($primary-color);
+            width: 100%;
+            
+            @include respond-to(md) {
+                width: auto;
+            }
+        }
+    }
+}
+
+.map-section {
+    @include slide-up;
+    animation-delay: 0.4s;
+
+    iframe {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+} 

@@ -1,0 +1,53 @@
+.footer {
+    background-color: $dark;
+    color: $white;
+    padding: 3rem 0;
+    margin-top: auto;
+
+    h5 {
+        color: $white;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+
+    p {
+        color: rgba($white, 0.8);
+        margin-bottom: 1rem;
+    }
+
+    .social-links {
+        a {
+            color: $white;
+            font-size: 1.5rem;
+            transition: $transition-base;
+
+            &:hover {
+                color: $primary-color;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    hr {
+        border-color: rgba($white, 0.1);
+        margin: 2rem 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        color: rgba($white, 0.6);
+        font-size: 0.875rem;
+    }
+
+    @include respond-to(md) {
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .social-links {
+            text-align: right;
+        }
+    }
+} 

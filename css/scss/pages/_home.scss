@@ -1,0 +1,60 @@
+.home-hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/Audi R8.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    margin-top: -56px; // Compensate for fixed navbar
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        @include fade-in;
+
+        @include respond-to(md) {
+            font-size: 4rem;
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        @include fade-in;
+        animation-delay: 0.2s;
+    }
+
+    .btn {
+        @include slide-up;
+        animation-delay: 0.4s;
+    }
+}
+
+.featured-section {
+    padding: 5rem 0;
+    background-color: $light;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $secondary-color;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    .featured-card {
+        @include slide-up;
+        animation-delay: calc(var(--card-index) * 0.2s);
+    }
+} 

@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de autos de lujo en ChangAI">
-    <title>Productos - ChangAI</title>
+    <meta name="description" content="Explora nuestra exclusiva colección de autos de lujo en ChangAI. Encuentra Audi, Porsche, BMW y más marcas premium con las mejores ofertas y financiación.">
+    <meta name="keywords" content="autos de lujo, ChangAI, Audi R8, Porsche 911, BMW M4, Mercedes-AMG, Tesla, comprar auto de lujo">
+    <meta name="author" content="ChangAI">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Catálogo de Autos de Lujo - ChangAI">
+    <meta property="og:description" content="Descubre nuestra selección premium de autos de lujo. Desde deportivos hasta eléctricos de alta gama.">
+    <meta property="og:image" content="../images/og-products.jpg">
+    <meta property="og:url" content="https://changai.com/productos">
+    <title>Catálogo de Autos de Lujo | ChangAI</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
@@ -103,9 +112,9 @@
             <div class="row g-4">
                 <!-- Audi R8 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
+                    <div class="product-card shadow-sm rounded">
                         <div class="product-badge">Nuevo</div>
-                        <img src="../images/Audi R8.png" class="card-img-top" alt="Audi R8">
+                        <img src="../images/cars/Audi-R8.jpg" class="card-img-top" alt="Audi R8">
                         <div class="card-body">
                             <h5 class="card-title">Audi R8 V10 Plus</h5>
                             <div class="product-specs">
@@ -129,9 +138,9 @@
 
                 <!-- Porsche 911 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
+                    <div class="product-card shadow-sm rounded">
                         <div class="product-badge">Destacado</div>
-                        <img src="../images/Porshe1.png" class="card-img-top" alt="Porsche 911">
+                        <img src="../images/cars/Porsche-911.jpg" class="card-img-top" alt="Porsche 911">
                         <div class="card-body">
                             <h5 class="card-title">Porsche 911 GT3</h5>
                             <div class="product-specs">
@@ -147,7 +156,7 @@
                             </div>
                             <div class="product-price">
                                 <span class="price">$180,000 USD</span>
-                                <button class="btn btn-primary">Ver Detalles</button>
+                                <a href="detalle-porsche-911.html" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -155,9 +164,9 @@
 
                 <!-- Mini Cooper -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
+                    <div class="product-card shadow-sm rounded">
                         <div class="product-badge">Oferta</div>
-                        <img src="../images/MiniCooper.png" class="card-img-top" alt="Mini Cooper">
+                        <img src="../images/cars/Mini-Cooper.jpg" class="card-img-top" alt="Mini Cooper">
                         <div class="card-body">
                             <h5 class="card-title">Mini Cooper S</h5>
                             <div class="product-specs">
@@ -173,7 +182,7 @@
                             </div>
                             <div class="product-price">
                                 <span class="price">$45,000 USD</span>
-                                <button class="btn btn-primary">Ver Detalles</button>
+                                <a href="detalle-mini-cooper.html" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -181,9 +190,9 @@
 
                 <!-- BMW M4 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
+                    <div class="product-card shadow-sm rounded">
                         <div class="product-badge">Nuevo</div>
-                        <img src="../images/Audi R8.png" class="card-img-top" alt="BMW M4">
+                        <img src="../images/cars/BMW-M4.jpg" class="card-img-top" alt="BMW M4">
                         <div class="card-body">
                             <h5 class="card-title">BMW M4 Competition</h5>
                             <div class="product-specs">
@@ -198,8 +207,8 @@
                                 <span><i class="fas fa-clock"></i> 3.8s</span>
                             </div>
                             <div class="product-price">
-                                <span class="price">$95,000 USD</span>
-                                <button class="btn btn-primary">Ver Detalles</button>
+                                <span class="price">$120,000 USD</span>
+                                <a href="detalle-bmw-m4.html" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -207,9 +216,9 @@
 
                 <!-- Mercedes-AMG GT -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
-                        <div class="product-badge">Destacado</div>
-                        <img src="../images/Porshe1.png" class="card-img-top" alt="Mercedes-AMG GT">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Premium</div>
+                        <img src="../images/cars/Mercedes-AMG.jpg" class="card-img-top" alt="Mercedes-AMG GT">
                         <div class="card-body">
                             <h5 class="card-title">Mercedes-AMG GT 63 S</h5>
                             <div class="product-specs">
@@ -225,33 +234,241 @@
                             </div>
                             <div class="product-price">
                                 <span class="price">$160,000 USD</span>
-                                <button class="btn btn-primary">Ver Detalles</button>
+                                <a href="detalle-mercedes-amg.html" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tesla Model S -->
+                <!-- BMW M8 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card">
-                        <div class="product-badge">Eléctrico</div>
-                        <img src="../images/MiniCooper.png" class="card-img-top" alt="Tesla Model S">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Nuevo</div>
+                        <img src="../images/cars/BMW-M8.jpg" class="card-img-top" alt="BMW M8">
                         <div class="card-body">
-                            <h5 class="card-title">Tesla Model S Plaid</h5>
+                            <h5 class="card-title">BMW M8 Competition</h5>
                             <div class="product-specs">
                                 <span><i class="fas fa-calendar"></i> 2024</span>
-                                <span><i class="fas fa-tachometer-alt"></i> 3,000 km</span>
-                                <span><i class="fas fa-bolt"></i> Eléctrico</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
                             </div>
-                            <p class="card-text">El Tesla Model S Plaid redefine el rendimiento eléctrico con sus 1,020 caballos de fuerza y aceleración de 0 a 100 km/h en menos de 2 segundos. Ofrece una autonomía de más de 600 km y tecnología de vanguardia.</p>
+                            <p class="card-text">El BMW M8 Competition representa la máxima expresión del lujo deportivo. Con su motor V8 biturbo de 625 CV, este Gran Turismo ofrece un rendimiento excepcional y un interior de primera clase.</p>
                             <div class="product-features">
-                                <span><i class="fas fa-horse"></i> 1,020 HP</span>
-                                <span><i class="fas fa-tachometer-alt"></i> 322 km/h</span>
-                                <span><i class="fas fa-clock"></i> 1.99s</span>
+                                <span><i class="fas fa-horse"></i> 625 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 305 km/h</span>
+                                <span><i class="fas fa-clock"></i> 3.2s</span>
                             </div>
                             <div class="product-price">
-                                <span class="price">$130,000 USD</span>
-                                <button class="btn btn-primary">Ver Detalles</button>
+                                <span class="price">$175,000 USD</span>
+                                <a href="detalle-bmw-m8.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamborghini Huracán -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Exclusivo</div>
+                        <img src="../images/cars/Lamborghini-Huracan.jpg" class="card-img-top" alt="Lamborghini Huracán">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamborghini Huracán EVO</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 500 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Lamborghini Huracán EVO es la evolución perfecta del superdeportivo italiano. Su motor V10 atmosférico de 640 CV y su aerodinámica avanzada lo convierten en una obra maestra del rendimiento.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 640 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 325 km/h</span>
+                                <span><i class="fas fa-clock"></i> 2.9s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$290,000 USD</span>
+                                <a href="detalle-huracan.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferrari SF90 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Híbrido</div>
+                        <img src="../images/cars/Ferrari-SF90.jpg" class="card-img-top" alt="Ferrari SF90 Stradale">
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari SF90 Stradale</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 100 km</span>
+                                <span><i class="fas fa-charging-station"></i> Híbrido</span>
+                            </div>
+                            <p class="card-text">El Ferrari SF90 Stradale es el primer superdeportivo híbrido enchufable de la marca. Con una potencia combinada de 1000 CV, representa el futuro de los superdeportivos.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 1000 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 340 km/h</span>
+                                <span><i class="fas fa-clock"></i> 2.5s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$520,000 USD</span>
+                                <a href="detalle-sf90.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- McLaren 720S -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Superdeportivo</div>
+                        <img src="../images/cars/McLaren-720S.jpg" class="card-img-top" alt="McLaren 720S">
+                        <div class="card-body">
+                            <h5 class="card-title">McLaren 720S</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 1,500 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El McLaren 720S es una obra maestra de la ingeniería británica. Su motor V8 biturbo de 720 CV y su chasis de fibra de carbono ofrecen una experiencia de conducción incomparable.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 720 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 341 km/h</span>
+                                <span><i class="fas fa-clock"></i> 2.9s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$310,000 USD</span>
+                                <a href="detalle-mclaren.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bugatti Chiron -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Ultra Exclusivo</div>
+                        <img src="../images/cars/Bugatti-Chiron.jpg" class="card-img-top" alt="Bugatti Chiron">
+                        <div class="card-body">
+                            <h5 class="card-title">Bugatti Chiron Super Sport</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 50 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Bugatti Chiron Super Sport es la máxima expresión del lujo y la velocidad. Con su motor W16 quad-turbo de 1600 CV, representa el pináculo de la ingeniería automotriz.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 1600 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 440 km/h</span>
+                                <span><i class="fas fa-clock"></i> 2.3s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$3,825,000 USD</span>
+                                <a href="detalle-chiron.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rolls-Royce Phantom -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Ultra Lujo</div>
+                        <img src="../images/cars/Rolls-Royce-Phantom.jpg" class="card-img-top" alt="Rolls-Royce Phantom">
+                        <div class="card-body">
+                            <h5 class="card-title">Rolls-Royce Phantom VIII</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Rolls-Royce Phantom VIII es la definición del lujo supremo. Con su motor V12 de 571 CV y un interior artesanal incomparable, representa el máximo estatus y confort.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 571 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 250 km/h</span>
+                                <span><i class="fas fa-clock"></i> 5.1s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$475,000 USD</span>
+                                <a href="detalle-phantom.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aston Martin DBS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">GT Británico</div>
+                        <img src="../images/cars/Aston-Martin-DBS.jpg" class="card-img-top" alt="Aston Martin DBS">
+                        <div class="card-body">
+                            <h5 class="card-title">Aston Martin DBS Superleggera</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 300 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Aston Martin DBS Superleggera es la quintaesencia del Gran Turismo británico. Su motor V12 biturbo de 725 CV combina potencia brutal con elegancia refinada.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 725 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 340 km/h</span>
+                                <span><i class="fas fa-clock"></i> 3.4s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$335,000 USD</span>
+                                <a href="detalle-dbs.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bentley Continental -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Lujo Deportivo</div>
+                        <img src="../images/cars/Bentley-Continental.jpg" class="card-img-top" alt="Bentley Continental">
+                        <div class="card-body">
+                            <h5 class="card-title">Bentley Continental GT Speed</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 800 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Bentley Continental GT Speed es el grand tourer definitivo. Su motor W12 biturbo de 650 CV ofrece un rendimiento excepcional con el máximo refinamiento británico.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 650 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 335 km/h</span>
+                                <span><i class="fas fa-clock"></i> 3.5s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$280,000 USD</span>
+                                <a href="detalle-continental.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagani Huayra -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card shadow-sm rounded">
+                        <div class="product-badge">Arte en Movimiento</div>
+                        <img src="../images/cars/Pagani-Huayra.jpg" class="card-img-top" alt="Pagani Huayra">
+                        <div class="card-body">
+                            <h5 class="card-title">Pagani Huayra Roadster BC</h5>
+                            <div class="product-specs">
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 100 km</span>
+                                <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            </div>
+                            <p class="card-text">El Pagani Huayra Roadster BC es una obra maestra de arte e ingeniería. Su motor V12 biturbo de 802 CV y su construcción artesanal lo convierten en una pieza única.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-horse"></i> 802 HP</span>
+                                <span><i class="fas fa-tachometer-alt"></i> 380 km/h</span>
+                                <span><i class="fas fa-clock"></i> 2.8s</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$3,500,000 USD</span>
+                                <a href="detalle-huayra.html" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
